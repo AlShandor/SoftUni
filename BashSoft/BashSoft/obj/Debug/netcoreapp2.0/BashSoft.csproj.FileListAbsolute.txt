@@ -1,0 +1,22 @@
+C:\Users\Sasho\Documents\Visual Studio 2017\Projects\StoryMode\BashSoft\bin\Debug\netcoreapp2.0\BashSoft.deps.json
+C:\Users\Sasho\Documents\Visual Studio 2017\Projects\StoryMode\BashSoft\bin\Debug\netcoreapp2.0\BashSoft.runtimeconfig.json
+C:\Users\Sasho\Documents\Visual Studio 2017\Projects\StoryMode\BashSoft\bin\Debug\netcoreapp2.0\BashSoft.runtimeconfig.dev.json
+C:\Users\Sasho\Documents\Visual Studio 2017\Projects\StoryMode\BashSoft\bin\Debug\netcoreapp2.0\BashSoft.dll
+C:\Users\Sasho\Documents\Visual Studio 2017\Projects\StoryMode\BashSoft\bin\Debug\netcoreapp2.0\BashSoft.pdb
+C:\Users\Sasho\Documents\Visual Studio 2017\Projects\StoryMode\BashSoft\obj\Debug\netcoreapp2.0\BashSoft.csprojResolveAssemblyReference.cache
+C:\Users\Sasho\Documents\Visual Studio 2017\Projects\StoryMode\BashSoft\obj\Debug\netcoreapp2.0\BashSoft.csproj.CoreCompileInputs.cache
+C:\Users\Sasho\Documents\Visual Studio 2017\Projects\StoryMode\BashSoft\obj\Debug\netcoreapp2.0\BashSoft.AssemblyInfoInputs.cache
+C:\Users\Sasho\Documents\Visual Studio 2017\Projects\StoryMode\BashSoft\obj\Debug\netcoreapp2.0\BashSoft.AssemblyInfo.cs
+C:\Users\Sasho\Documents\Visual Studio 2017\Projects\StoryMode\BashSoft\obj\Debug\netcoreapp2.0\BashSoft.dll
+C:\Users\Sasho\Documents\Visual Studio 2017\Projects\StoryMode\BashSoft\obj\Debug\netcoreapp2.0\BashSoft.pdb
+C:\Users\Sasho\Desktop\BashSoft\BashSoft\bin\Debug\netcoreapp2.0\BashSoft.deps.json
+C:\Users\Sasho\Desktop\BashSoft\BashSoft\bin\Debug\netcoreapp2.0\BashSoft.runtimeconfig.json
+C:\Users\Sasho\Desktop\BashSoft\BashSoft\bin\Debug\netcoreapp2.0\BashSoft.runtimeconfig.dev.json
+C:\Users\Sasho\Desktop\BashSoft\BashSoft\bin\Debug\netcoreapp2.0\BashSoft.dll
+C:\Users\Sasho\Desktop\BashSoft\BashSoft\bin\Debug\netcoreapp2.0\BashSoft.pdb
+C:\Users\Sasho\Desktop\BashSoft\BashSoft\obj\Debug\netcoreapp2.0\BashSoft.csprojResolveAssemblyReference.cache
+C:\Users\Sasho\Desktop\BashSoft\BashSoft\obj\Debug\netcoreapp2.0\BashSoft.csproj.CoreCompileInputs.cache
+C:\Users\Sasho\Desktop\BashSoft\BashSoft\obj\Debug\netcoreapp2.0\BashSoft.AssemblyInfoInputs.cache
+C:\Users\Sasho\Desktop\BashSoft\BashSoft\obj\Debug\netcoreapp2.0\BashSoft.AssemblyInfo.cs
+C:\Users\Sasho\Desktop\BashSoft\BashSoft\obj\Debug\netcoreapp2.0\BashSoft.dll
+C:\Users\Sasho\Desktop\BashSoft\BashSoft\obj\Debug\netcoreapp2.0\BashSoft.pdb
