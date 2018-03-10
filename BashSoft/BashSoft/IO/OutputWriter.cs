@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace BashSoft
 {
-    class OutputWriter
+    public static class OutputWriter
     {
         public static void WriteMessage(string message)
         {
@@ -28,7 +28,7 @@ namespace BashSoft
             Console.ForegroundColor = currentColor;
         }
 
-        public static void PrintStudent(KeyValuePair<string, List<int>> student)
+        public static void PrintStudent(KeyValuePair<string, double> student)
         {
             OutputWriter.WriteMessageOnNewLine(string.Format($"{student.Key} - {string.Join(", ", student.Value)}"));
         }

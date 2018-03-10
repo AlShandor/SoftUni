@@ -4,9 +4,9 @@ using System.IO;
 
 namespace BashSoft
 {
-    public static class IOManager
+    public class IOManager
     {
-        public static void TraverseDirectory(int depth)
+        public void TraverseDirectory(int depth)
         {
             OutputWriter.WriteEmptyLine();
             int initialIdentation = SessionData.currentPath.Split('\\').Length;
@@ -16,11 +16,11 @@ namespace BashSoft
 
             while (subFolders.Count != 0)
             {
-                //TODO: Dequeue the folder  at the start of the queue
+                
                 var currentPath = subFolders.Dequeue();
                 var identation = currentPath.Split('\\').Length - initialIdentation;
 
-                //TODO: Print the folder path
+                
                 OutputWriter.WriteMessageOnNewLine($"{new string('-', identation)}{currentPath}");
 
                 try
@@ -33,7 +33,7 @@ namespace BashSoft
                         OutputWriter.WriteMessageOnNewLine(new string('-', indexOfLastSlash) + fileName);
                     }
 
-                    //TODO: Add all it's subfolders to the end of the queue
+                    //Add all it's subfolders to the end of the queue
                     foreach (var directoryPath in Directory.GetDirectories(currentPath))
                     {
                         subFolders.Enqueue(directoryPath);
@@ -52,7 +52,7 @@ namespace BashSoft
             }
         }
 
-        public static void CreateDirectoryInCurrentFolder(string name)
+        public void CreateDirectoryInCurrentFolder(string name)
         {
             string path = Directory.GetCurrentDirectory() + "\\" + name;
             try
@@ -61,12 +61,12 @@ namespace BashSoft
             }
             catch (ArgumentException)
             {
-                OutputWriter.DisplayException(ExceptionMessages.ForbiddenSymbolsContainedInName);
+                throw new InvalidFileException();
             }
             
         }
 
-        public static void ChangeCurrentDirectoryRelative(string relativePath)
+        public void ChangeCurrentDirectoryRelative(string relativePath)
         {
             if (relativePath == "..")
             {
@@ -79,7 +79,7 @@ namespace BashSoft
                 }
                 catch (ArgumentOutOfRangeException)
                 {
-                    OutputWriter.DisplayException(ExceptionMessages.UnableToGoHigherInPartitionHierarchy);
+                    throw new ArgumentException(ExceptionMessages.UnableToGoHigherInPartitionHierarchy);
                 }
                 
             }
@@ -91,12 +91,11 @@ namespace BashSoft
             }
         }
 
-        public static void ChangeCurrentDirectoryAbsolute(string absolutePath)
+        public void ChangeCurrentDirectoryAbsolute(string absolutePath)
         {
             if (!Directory.Exists(absolutePath))
             {
-                OutputWriter.DisplayException(ExceptionMessages.InvalidPath);
-                return;
+                throw new InvalidPathException();
             }
 
             SessionData.currentPath = absolutePath;

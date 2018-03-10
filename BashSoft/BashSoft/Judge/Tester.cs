@@ -3,9 +3,9 @@ using System.IO;
 
 namespace BashSoft
 {
-    public static class Tester
+    public class Tester
     {
-        public static void CompareContent(string userOuputPath, string expectedOutputPath)
+        public void CompareContent(string userOuputPath, string expectedOutputPath)
         {
             try
             {
@@ -23,14 +23,14 @@ namespace BashSoft
                 PrintOutput(mismatches, hasMismatches, mismatchPath);
                 OutputWriter.WriteMessageOnNewLine("Files read!");
             }
-            catch (FileNotFoundException)
+            catch (IOException)
             {
-                OutputWriter.DisplayException(ExceptionMessages.InvalidPath);
+                throw new InvalidPathException();
             }
-            
+
         }
 
-        private static void PrintOutput(string[] mismatches, bool hasMismatches, string mismatchPath)
+        private void PrintOutput(string[] mismatches, bool hasMismatches, string mismatchPath)
         {
             if (hasMismatches)
             {
@@ -39,14 +39,7 @@ namespace BashSoft
                     OutputWriter.WriteMessageOnNewLine(line);
                 }
 
-                try
-                {
-                    File.WriteAllLines(mismatchPath, mismatches);
-                }
-                catch (DirectoryNotFoundException)
-                {
-                    OutputWriter.DisplayException(ExceptionMessages.InvalidPath);
-                }
+                File.WriteAllLines(mismatchPath, mismatches);
                 
                 return;
             }
@@ -54,12 +47,12 @@ namespace BashSoft
             OutputWriter.WriteMessageOnNewLine("Files are identical. There are no mismatches.");
         }
 
-        private static string[] GetLinesWithPossibleMismatches(string[] actualOuputLines, string[] exptectedOuputLines, out bool hasMismatches)
+        private string[] GetLinesWithPossibleMismatches(string[] actualOuputLines, string[] exptectedOuputLines, out bool hasMismatches)
         {
             hasMismatches = false;
             string output = string.Empty;
 
-            
+
             OutputWriter.WriteMessageOnNewLine("Comparing files...");
 
             int minOutputLines = actualOuputLines.Length;
@@ -95,7 +88,7 @@ namespace BashSoft
             return mismatches;
         }
 
-        private static string GetMismatchPath(string expectedOutputPath)
+        private string GetMismatchPath(string expectedOutputPath)
         {
             int indexOf = expectedOutputPath.LastIndexOf('\\');
             string directoryPath = expectedOutputPath.Substring(0, indexOf);
@@ -104,4 +97,4 @@ namespace BashSoft
         }
     }
 }
-    
+
