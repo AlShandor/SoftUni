@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. Extract Emails", "01. Extract Emails\01. Extract Emails.csproj", "{F6F3ABB9-E462-422A-AF93-B199FC9CB7D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. ExtractSentencesByKeyword", "02. ExtractSentencesByKeyword\02. ExtractSentencesByKeyword.csproj", "{0B6BF0FB-EC6B-4B65-A44A-DD90E1EE4DB4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F6F3ABB9-E462-422A-AF93-B199FC9CB7D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6F3ABB9-E462-422A-AF93-B199FC9CB7D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6F3ABB9-E462-422A-AF93-B199FC9CB7D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6F3ABB9-E462-422A-AF93-B199FC9CB7D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B6BF0FB-EC6B-4B65-A44A-DD90E1EE4DB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B6BF0FB-EC6B-4B65-A44A-DD90E1EE4DB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B6BF0FB-EC6B-4B65-A44A-DD90E1EE4DB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B6BF0FB-EC6B-4B65-A44A-DD90E1EE4DB4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {408F00FA-E3B3-4C52-938E-0BCCD877E890}
+	EndGlobalSection
+EndGlobal
